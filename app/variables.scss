@@ -1,0 +1,23 @@
+
+
+
+
+
+$small-device:640px;
+$medium-device:768px;
+$large-device:1024px;
+$extra-large-device:1280px;
+
+
+@mixin max-width($device-size) {
+    @media screen and (max-width:$device-size) {
+         @content;
+    }
+}
+
+
+@mixin min-width($device-size) {
+    @media screen and (min-width:$device-size) {
+         @content;
+    }
+}

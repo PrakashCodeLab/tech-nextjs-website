@@ -1,0 +1,115 @@
+@import "../variables.scss";
+
+.about__container {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  
+  .about__img__container { 
+    width: 100%;
+    position: relative;
+   margin-top: 2rem;
+   overflow: hidden;
+
+   .aboutImg{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+   
+    border-radius: 0.5rem;
+    transition: transform 0.6s ease-in-out;
+      &:hover{
+        transform: scale(1.04);
+      }
+   }
+
+   .about__content{
+    width: 400px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    padding: 1rem;
+    background-color: #18d60b8b;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    .about__head{
+        font-size: 1.7rem;
+        text-transform: uppercase;
+         font-weight: 600;
+       
+         
+         
+    }
+
+    .about__lead{ 
+       
+        text-transform: capitalize;
+       font-weight: 400;
+    
+    }
+   }
+    
+}
+}
+
+
+
+
+
+.about__content__section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 100px;
+    
+  @include max-width($large-device){
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+
+
+}
+
+.about__left__section {
+  flex: 1;
+ 
+}
+
+.about__right__section {
+  flex: 1;
+}
+
+.about__head {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  
+}
+
+.about__lead {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.about__list {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+
+
+
+// Apply custom styles to Next.js Image component
+
+

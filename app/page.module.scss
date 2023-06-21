@@ -1,0 +1,92 @@
+@import "./variables.scss";
+
+.main__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    @include max-width($large-device){
+          flex-direction: column;
+          gap: 50px;
+          margin-top: 3rem;
+    }
+    .main__sectionlead{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+        .text{
+            align-self: start;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 700;
+           
+         
+          /** TEXT GRADIENT */ color: #1f6e2b; 
+          background-image: linear-gradient(60deg, #E21143, #FFB03A);
+           background-clip: text; 
+           -webkit-background-clip: text;
+           
+             -webkit-text-fill-color: transparent;
+          
+        
+        
+        } 
+
+        .lead{
+           
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            max-width: 350px;
+            align-self: baseline;
+            text-align: justify;
+            font-weight: 400;
+            
+        }
+
+        .button{
+            align-self: first baseline;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-transform: capitalize;
+            font-size: 0.8em;
+            background-color: #1f6e2b;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            &:hover{
+                color:#1ebd70;
+                background-color: #1394e3b6;
+            }
+        }
+
+    }  
+
+    .main__imgContainer{
+        flex: 1;
+       
+
+        .herobg{
+            width:100%;
+            height: 500px;
+            object-fit: contain;
+            animation: move 2s infinite alternate;
+        } 
+
+        @keyframes move {
+            0%{
+             transform: translateY(-15px);
+            }
+            100%{
+             transform: translateY(0px) scale(1.013);
+            }
+       }
+    }
+}

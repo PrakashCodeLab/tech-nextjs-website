@@ -1,0 +1,26 @@
+// Darkmode.module.scss
+
+.toggleBar {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+  }
+  
+  .toggleBar span {
+    font-size: 1rem;
+    color: #0c8bab;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .toggleBar span:hover {
+    color: #ffcc00;
+  }
+  
+
+  

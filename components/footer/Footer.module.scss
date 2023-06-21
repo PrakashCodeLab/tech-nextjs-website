@@ -1,0 +1,63 @@
+@import '../../app/variables.scss';
+
+
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+@include max-width($large-device){
+        flex-direction: column;
+        gap: 1rem;
+}
+
+}
+
+
+.footer__wrapper{
+    .footer__lead{
+       
+        text-transform: capitalize;
+        letter-spacing: 0.01em;
+
+    }
+
+   
+    
+    
+
+}
+
+.footer__logo{
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+  
+    .footer__img{
+        width: 40px;
+        transition: all 0.6s ease;
+
+        &:hover{
+            animation: up-shift 0.6s ease-in-out  forwards;
+           
+        }
+       
+    }
+
+    @keyframes  up-shift {
+         0%{
+            transform: translate(0);
+         }
+         100%{
+            transform: translateY(-10px) scale(1.01);
+         }
+    }
+
+
+
+}
+
+
