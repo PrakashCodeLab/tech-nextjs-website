@@ -1,0 +1,40 @@
+
+> blog_website@0.1.0 build
+> next build
+
+- info Creating an optimized production build...
+- info Compiled successfully
+- info Linting and checking validity of types...
+- info Collecting page data...
+- info Generating static pages (0/10)
+- info Generating static pages (2/10)
+- info Generating static pages (4/10)
+- info Generating static pages (7/10)
+- info Generating static pages (10/10)
+- info Finalizing page optimization...
+
+Route (app)                                Size     First Load JS
+Γöî Γùï /                                      0 B                0 B
+Γö£ Γùï /about                                 397 B          93.3 kB
+Γö£ Γùï /blog                                  4.43 kB        93.4 kB
+Γö£ Γùï /contact                               4.28 kB        93.2 kB
+Γö£ Γùï /portfolia                             1.01 kB        88.6 kB
+Γö£ Γùï /portfolia/illustrations               4.66 kB        93.6 kB
+Γö£ Γùï /portfolia/software                    797 B          93.7 kB
+Γöö Γùï /portfolia/websites                    4.46 kB        93.4 kB
++ First Load JS shared by all              77.8 kB
+  Γö£ chunks/769-3068c7e6d591e978.js         25.2 kB
+  Γö£ chunks/bce60fc1-e7cb3874f5f47943.js    50.5 kB
+  Γö£ chunks/main-app-2c468f05d8f88537.js    216 B
+  Γöö chunks/webpack-9a73df6d49eccb6a.js     1.84 kB
+
+Route (pages)                              Size     First Load JS
+ΓöÇ Γùï /404                                   182 B          74.9 kB
++ First Load JS shared by all              74.8 kB
+  Γö£ chunks/framework-8883d1e9be70c3da.js   45 kB
+  Γö£ chunks/main-573e56e06330ce4d.js        27.7 kB
+  Γö£ chunks/pages/_app-998b8fceeadee23e.js  195 B
+  Γöö chunks/webpack-9a73df6d49eccb6a.js     1.84 kB
+
+Γùï  (Static)  automatically rendered as static HTML (uses no initial props)
+

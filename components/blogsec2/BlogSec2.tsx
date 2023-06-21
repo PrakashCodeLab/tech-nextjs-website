@@ -1,8 +1,17 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Buttons from '../Button/Buttons';
 
-const BlogSec2 = ({Img,title,desc}) => {
+
+interface BlogSec2Props {
+  Img:StaticImageData,
+  title: string,
+  desc:string,
+
+}
+
+
+const BlogSec2:React.FC<BlogSec2Props> = ({Img,title,desc}) => {
   return (
     <div className='w-[100%] h-[400px] max-lg:h-auto  flex flex-col justify-center items-center gap-9 p-[0.2rem]  '>
         <div className={ `  flex justify-start items-start  max-lg:flex-col`}>

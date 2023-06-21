@@ -1,9 +1,16 @@
 import React from 'react';
  // Replace with your actual image path
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Styles from './BlogSec.module.scss';
 
-const BlogSec = ({title , desc ,img}) => {
+interface Blog3Props{
+  title: string,
+  desc:string,
+  img:StaticImageData,
+}
+
+
+const BlogSec:React.FC<Blog3Props> = ({title , desc ,img}) => {
   return (
     <div className={Styles.blog__container}>
         <div className={Styles.blog__image}>
